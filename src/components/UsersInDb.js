@@ -1,28 +1,28 @@
 import React,{Component} from 'react';
 
-import MovieList from './MovieList';
+import UserList from './User';
 
-class Movie extends Component{
+class UsersInDb extends Component{
 
 	constructor(){
         super()
         this.state={
-            moviesList: []
+            usersList: []
         }   
     }
 
 	componentDidMount()
     {
 
-        fetch('http://localhost:3001/api/movies')
+        fetch('http://localhost:3001/api/users')
         .then(respuesta =>{
             console.log(respuesta)
         return respuesta.json()
         
         })
-        .then(movies =>{
-        console.log(movies)
-        this.setState({moviesList: movies.data})
+        .then(users =>{
+        console.log(users)
+        this.setState({usersList: users.users})
         })
         .catch(error => console.log(error))
     }
@@ -33,25 +33,23 @@ class Movie extends Component{
 		return(
 			<React.Fragment>
 						{/*<!-- PRODUCTS LIST -->*/}
-						<h1 className="h3 mb-2 text-gray-800">All the movies in the Database</h1>
+						<h1 className="h3 mb-2 text-gray-800">Lista de Usuarios</h1><br />
 						<div className="card shadow mb-4">
             
 							<div className="card-body">
 								<div className="table-responsive">
 									
-									<table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
+									<table className="table table-bordered " variant="dark" id="dataTable" width="100%" cellSpacing="0">
 										<thead>
 											<tr>
 												<th>Id</th>
-												<th>Titulo</th>
-												<th>Calificación</th>
-												<th>Premios</th>
-												<th>Duración</th>
+												<th>Nombre</th>
+												<th>Email</th>
 											</tr>
 										</thead>
 										{
-                                        this.state.moviesList.map((movie,index)=>{
-                                            return <MovieList  {...movie}  key={index} />
+                                        this.state.usersList.map((user,index)=>{
+                                            return <UserList  {...user}  key={index} />
                                         })
                         				}   
 										
@@ -66,4 +64,4 @@ class Movie extends Component{
 	}
     
 }
-export default Movie;
+export default UsersInDb;

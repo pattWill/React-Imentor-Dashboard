@@ -1,10 +1,13 @@
 import React from 'react';
 import SideBar from './SideBar';
 import ContentWrapper from './ContentWrapper';
-import Products from './Products';
-import Users from './Users';
+
 import {Link, Route, Routes, Router, Switch, } from 'react-router-dom'
-import Categories from './Categories';
+
+import NotFound from './NotFound';
+import ProductsInDb from './ProductsInDb';
+import CategoriesInDb from './CategoriesInDb';
+import UsersInDb from './UsersInDb';
 
 function App() {
   return (
@@ -13,9 +16,10 @@ function App() {
         <SideBar />
           <Routes>
           <Route exact path="/" element={<ContentWrapper/>}/>
-          <Route exact path="/users" element={<Users/>}/>
-          <Route exact path="/products" element={<Products/>}/>
-          <Route exact path="/categories" element={<Categories/>}/>
+          <Route exact path="/users" element={<UsersInDb/>}/>
+          <Route exact path="/products" element={<ProductsInDb/>}/>
+          <Route exact path="/categories" element={<CategoriesInDb/>}/>
+          <Route path="*" element={<NotFound/>}/>
           </Routes>
         </div>
     </React.Fragment>

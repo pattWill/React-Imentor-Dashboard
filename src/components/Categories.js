@@ -1,11 +1,16 @@
-import React, {Component} from "react";
-import propTypes from 'prop-types';
-function Categories(){
-    return (
-        <div>
-        <h2>Categorías</h2>
-        </div>
-    );
-}
+import React from 'react';
 
+function Categories(props){
+    return(
+        <React.Fragment>
+            <div className="col-lg-6 mb-4">
+                <div className="card text-white bg-dark  shadow">
+                    <div className="card-body">
+                        {props.category_name}
+                    </div>
+                </div>
+            </div>
+        </React.Fragment>
+    )
+}
 export default Categories;

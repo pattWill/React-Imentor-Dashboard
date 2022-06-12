@@ -1,16 +1,14 @@
 import React from 'react'
 
 
-function MovieList(props){
+function UserList(props){
     return(
         <React.Fragment>
             <tbody>
 											<tr>
 												<td>{props.id}</td>
-												<td>{props.title}</td>
-												<td>{props.rating}</td>
-												<td>{props.awards}</td>
-												<td>{props.length}</td>
+												<td>{props.name}</td>
+												<td>{props.email}</td>
 											</tr>
 											
 			</tbody>
@@ -18,4 +16,4 @@ function MovieList(props){
     )
 }
 
-export default MovieList;
+export default UserList;
