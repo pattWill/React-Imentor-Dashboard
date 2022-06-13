@@ -33,7 +33,7 @@ class UsersInDb extends Component{
 		return(
 			<React.Fragment>
 						{/*<!-- PRODUCTS LIST -->*/}
-						<h1 className="h3 mb-2 text-gray-800">Lista de Usuarios</h1><br />
+						<h1 className="h3 mb-2 text-gray-800"></h1><br />
 						<div className="card shadow mb-4">
             
 							<div className="card-body">

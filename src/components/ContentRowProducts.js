@@ -1,6 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SmallCard from './SmallCard';
 
+const productosTotal =  [];
+
+const productTotal = async () => { 
+    fetch('http://localhost:3001/api/products')
+    .then(respuesta =>{
+        console.log(respuesta)
+    return respuesta.json()
+    
+    })
+    .then(products =>{
+    console.log(products)
+    this.setState({productsList: products.products})
+    })
+    .catch(error => console.log(error))
+
+    productTotal.map((product, i) => { 
+    return productosTotal.push})
+    console.log("jsdj")
+}
+  
 let productInDataBase = {
     color:   "primary",
     titulo: "Total Productos",
@@ -38,5 +58,5 @@ function ContentRowTop(){
         </div>
         </React.Fragment>
     )
-}
+} 
 export default ContentRowTop;
