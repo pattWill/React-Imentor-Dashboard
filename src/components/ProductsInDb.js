@@ -39,7 +39,7 @@ class ProductsInDb extends Component{
                                 <h6 className="m-0 font-weight-bold">Lista de Productos</h6>
                             </div>
                             <div>
-                                <div className="row ">
+                                <div className="row hover-shadow">
                                     {
                                         this.state.productsList.map((product,index)=>{
                                             return  <Products  {...product}  key={index} />
