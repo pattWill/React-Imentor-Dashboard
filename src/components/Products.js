@@ -4,9 +4,9 @@ import React from 'react';
 function Products(props){
     return(
         <React.Fragment>
-            <div className="col-lg-6 mb-4">
+            <div className="col-lg-3 mb-2">
                 <div className="card shadow">
-                    <div className="">
+                    <div className="ml-2">
                      {props.id} {' - '} {props.name} 
                     </div>
                 </div>

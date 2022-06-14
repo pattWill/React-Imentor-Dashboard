@@ -25,7 +25,7 @@ function LastProductInDb(){
                                 <h6 className="m-0 font-weight-bold">Último producto agregado</h6>
                             </div>
                             <div className="card-body ">
-                                <h3>{lastProduct.name}</h3> {' '}
+                                <h5 className='text-success'>{lastProduct.name}</h5> {' '}
                                 <p>{lastProduct.description} </p>
                             </div>
                         </div>

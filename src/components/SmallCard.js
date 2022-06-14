@@ -11,7 +11,7 @@ function SmallCard(props){
                                 <div className={`font-weight-bold text-${props.color} text-uppercase mb-1`}> {props.titulo}</div>
                                 <div className="h5 mb-0 font-weight-bold text-gray-800">{(props.valor)}</div>
                             </div>
-                            <div className="">
+                            <div>
                                 <i className={`fas ${props.icono} fa-2x text-gray-300`}></i>
                             </div>
                         </div>

@@ -34,7 +34,7 @@ function SideBar(){
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="/users">
                         <i className="fas fa-user"></i>
-                        <span>Usuarios</span>
+                        <span> Usuarios</span>
                     </Link>
                 </li>
 
