@@ -77,6 +77,9 @@ body {
     background-color: #fff
 }
 
+.mainContent {
+    margin-left: 20px;
+}
 [tabindex="-1"]:focus {
     outline: 0 !important
 }
@@ -6728,7 +6731,8 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-color: #4e73df !important
+    background-color: #3587A4 !important;
+    color: #fff;
 }
 
 a.bg-primary:focus,

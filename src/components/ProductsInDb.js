@@ -35,10 +35,10 @@ class ProductsInDb extends Component{
                     {/*<!-- Categories in DB -->*/}
                     <div className="">					
                         <div className="card shadow mb-4">
-                            <div className="card-header py-3">
-                                <h6 className="font-weight-bold">Lista de Productos</h6>
+                            <div className="card-header py-2 bg-primary ">
+                                <h6 className="m-0 font-weight-bold">Lista de Productos</h6>
                             </div>
-                            <div className="card-body" id="caja1">
+                            <div className="" id="">
                                 <div className="row">
                                     {
                                         this.state.productsList.map((product,index)=>{

@@ -17,9 +17,9 @@ function CategoriesInDb (){
         return (
             <>
                     {/*<!-- Categories in DB -->*/}
-                    <div className="col-lg-5">						
+                    <div className="">						
                         <div className="card shadow mb-4">
-                            <div className="card-header py-3">
+                            <div className="card-header py-2 bg-primary">
                                 <h6 className="m-0 font-weight-bold">Categorías</h6>
                             </div>
                             <div className="card-body" id="">
