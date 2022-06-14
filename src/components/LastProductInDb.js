@@ -19,7 +19,7 @@ function LastProductInDb(){
     console.log(lastProduct)
     return (
         <>
-        <div className="row">		
+        <div className="">		
         <div className="">
             <div className="card shadow mb-4">
                             <div className="card-header py-2 bg-primary">
