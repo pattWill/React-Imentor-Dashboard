@@ -18,9 +18,7 @@ function LastProductInDb(){
 
     console.log(lastProduct)
     return (
-        <>
-        <div className="">		
-        <div className="">
+        <>	
             <div className="card shadow mb-4">
                             <div className="card-header py-2 bg-primary">
                                 <h6 className="m-0 font-weight-bold">Último producto agregado</h6>
@@ -30,8 +28,6 @@ function LastProductInDb(){
                                 <p>{lastProduct.description} </p>
                             </div>
                         </div>
-                    </div>
-                </div>
         </>
     )
 }

@@ -79,6 +79,21 @@ body {
 
 .mainContent {
     margin-left: 20px;
+    justify-content: space-between;
+}
+
+.mainContentTop {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.card-body-category {
+    padding: .60rem;
+    width: 100%;
 }
 [tabindex="-1"]:focus {
     outline: 0 !important
@@ -89,6 +104,8 @@ hr {
     height: 0;
     overflow: visible
 }
+
+
 
 h1,
 h2,
@@ -4752,7 +4769,6 @@ input[type=submit].btn-block {
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;

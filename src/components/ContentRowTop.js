@@ -15,7 +15,7 @@ function ContentRowTop(){
 					<ContentRowProducts />
 					{/*<!-- End Content Row Products Totals-->*/}
 					
-					<div>
+					<div className='mainContentTop mt-4'>
 					{/*<!-- Content Row Categories Totals-->*/}
 					<CategoriesInDb/>
 					<LastProductInDb />
