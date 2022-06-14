@@ -3,6 +3,8 @@ import UsersInDb from './UsersInDb';
 import ContentRowProducts from './ContentRowProducts';
 import ProductsInDb from './ProductsInDb';
 import CategoriesInDb from './CategoriesInDb';
+import LastProductInDb from './LastProductInDb';
+
 function ContentRowTop(){
     return(
         <React.Fragment>
@@ -18,7 +20,7 @@ function ContentRowTop(){
 
 					<div className="container-fluid">
 					<CategoriesInDb/>
-		
+					<LastProductInDb />
 	
 					{/*<!-- Users in DB -->*/}
 					<UsersInDb />

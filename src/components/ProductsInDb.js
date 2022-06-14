@@ -23,6 +23,7 @@ class ProductsInDb extends Component{
         .then(products =>{
         console.log(products)
         this.setState({productsList: products.products})
+        console.log(products.count)
         })
         .catch(error => console.log(error))
     }
