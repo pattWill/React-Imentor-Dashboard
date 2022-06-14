@@ -10460,7 +10460,7 @@ a.text-secondary:hover {
 }
 
 .text-success {
-    color: #1cc88a !important
+    color: #2D848A !important
 }
 
 a.text-success:focus,
@@ -10786,7 +10786,7 @@ a:focus {
 }
 
 .bg-gradient-secondary {
-    background-color: #25b1d7;
+    background-color: #3587A4;
     background-image: linear-gradient(180deg, #25b1d7 10%, #60616f 100%);
     background-size: cover
 }
@@ -10884,7 +10884,7 @@ a:focus {
 }
 
 .text-gray-300 {
-    color: #dddfeb !important
+    color: #ffc600 !important
 }
 
 .text-gray-400 {
@@ -10896,7 +10896,7 @@ a:focus {
 }
 
 .text-gray-600 {
-    color: #858796 !important
+    color: #ffff !important
 }
 
 .text-gray-700 {
@@ -10933,11 +10933,11 @@ a:focus {
 }
 
 .border-bottom-secondary {
-    border-bottom: .25rem solid #858796 !important
+    border-bottom: .25rem solid rgb(38, 52, 68) !important
 }
 
 .border-left-success {
-    border-left: .25rem solid #1cc88a !important
+    border-left: .25rem solid  !important
 }
 
 .border-bottom-success {
@@ -11048,7 +11048,8 @@ a:focus {
 }
 
 .topbar {
-    height: 4.375rem
+    height: 4.375rem;
+    background-color: #3587A4;
 }
 
 .topbar #sidebarToggleTop {
@@ -11192,7 +11193,8 @@ a:focus {
 
 .sidebar {
     width: 6.5rem;
-    min-height: 100vh
+    min-height: 100vh;
+    background-color: #3587A4;
 }
 
 .sidebar .nav-item {
@@ -11210,7 +11212,7 @@ a:focus {
 }
 
 .sidebar .nav-item .nav-link span {
-    font-size: .65rem;
+    font-size: .90rem;
     display: block
 }
 
@@ -11316,15 +11318,9 @@ a:focus {
 }
 
 .sidebar .sidebar-brand {
-    height: 4.375rem;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 800;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .05rem;
-    z-index: 1
+    height: 4.3rem;
+    width: 100%;
+
 }
 
 .sidebar .sidebar-brand .sidebar-brand-icon i {
@@ -11545,9 +11541,6 @@ a:focus {
     background-color: #dddfeb
 }
 
-.sidebar-dark .sidebar-brand {
-    color: #fff
-}
 
 .sidebar-dark hr.sidebar-divider {
     border-top: 1px solid rgba(255, 255, 255, .15)

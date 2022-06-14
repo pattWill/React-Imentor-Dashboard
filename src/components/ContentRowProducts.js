@@ -45,14 +45,14 @@ function ContentRowTop(){
     } )
 
     let productInDataBase = {
-        color:   "primary",
+        color:   "success",
         titulo: "Total Productos",
         valor: products,
-        icono: "fas fa-film",
+        icono: "fas fa-plus-circle",
     }
     
     let user = {
-        color:   "warning",
+        color:   "success",
         titulo: "Total Usuarios",
         valor: users,
         icono: "fas fa-user",
@@ -62,7 +62,7 @@ function ContentRowTop(){
         color:   "success",
         titulo: "Total Categorías",
         valor: categories,
-        icono: "fas fa-award",
+        icono: "fas fa-fw fa-table",
     }
     
 

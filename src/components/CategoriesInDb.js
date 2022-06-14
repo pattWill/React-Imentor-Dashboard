@@ -1,7 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import Categories  from './Categories';
-
-
 function CategoriesInDb (){
 
     const [categories, setCategories ] = useState([])
@@ -11,37 +8,27 @@ function CategoriesInDb (){
             return respuesta.json()
         })
         .then(categories =>{
-        console.log(categories.categories.map)
         setCategories(categories.categories)
         })
         .catch(error => console.log(error))
     }, [])
-    
-    let categorias = [ {
-        name: 'front'}, {
-        name: 'back'
-        } ]
 
-        const fondoCaja = (e) => {
-        let div = document.querySelector('#caja1')
-        div.classList.add('bg-secondary')
-    }
 
         return (
             <>
                     {/*<!-- Categories in DB -->*/}
-                    <div className="col-lg-6 mb-4">						
+                    <div className="col-lg-5">						
                         <div className="card shadow mb-4">
                             <div className="card-header py-3">
-                                <h6 onMouseOver={e => fondoCaja(e)} className="m-0 font-weight-bold text-gray-800">Categorías</h6>
+                                <h6 className="m-0 font-weight-bold">Categorías</h6>
                             </div>
-                            <div className="card-body" id="caja1">
-                            <div className="row">
+                            <div className="card-body" id="">
+                            <div className="">
                                 {
-                                    categories.map((category,i)=> 
-                                    <div><p key={category.name + i}>{category.name + i}</p></div>
+                                    categories ? categories.map ((category,i)=> 
+                                    <div><p key={category.name + i}>{category.name}</p></div>
                                     
-                                )} 
+                                ) : <p>No hay categorías disponibles</p>} 
                                 </div>
                             </div>
                         </div>

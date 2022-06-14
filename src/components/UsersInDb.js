@@ -33,13 +33,13 @@ class UsersInDb extends Component{
 		return(
 			<React.Fragment>
 						{/*<!-- PRODUCTS LIST -->*/}
-						<h1 className="h3 mb-2 text-gray-800"></h1><br />
+
 						<div className="card shadow mb-4">
             
-							<div className="card-body">
+							<div className="">
 								<div className="table-responsive">
 									
-									<table className="table table-bordered " variant="dark" id="dataTable" width="100%" cellSpacing="0">
+									<table className="table" id="dataTable" cellSpacing="0">
 										<thead>
 											<tr>
 												<th>Id</th>

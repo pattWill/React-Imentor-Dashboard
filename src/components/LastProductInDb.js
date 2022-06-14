@@ -9,20 +9,18 @@ function LastProductInDb(){
         .then(respuesta =>{
             return respuesta.json()
         })
-        .then(products =>{
-        let last = products.products[products.products.length - 1]
-        console.log(last)
-        products.push(last)
-        setLastProduct(last)
+        .then(lastProduct =>{
+        setLastProduct(lastProduct.products[lastProduct.products.length - 1])
         })
         .catch(error => console.log(error))
     } ) 
-
-    console.log(lastProduct)
-
+ 
     return (
-        <>
-           
+        <>                      <div className="card-body" id="caja1">
+                                       <div className="row">
+                                <p>Acá va el último producto en la base de datos</p>
+                                </div>
+                                </div>
         </>
     )
 }

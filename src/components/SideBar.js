@@ -1,12 +1,12 @@
 import React from 'react';
-import image from '../assets/images/Logo-iMentor2.png';
+import image from '../assets/images/Logo-iMentor1.png';
 import {Link, Route, Switch, } from 'react-router-dom'
 
 function SideBar(){
     return(
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
-            <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul className="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 {/*<!-- Sidebar - Brand -->*/}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
@@ -18,12 +18,6 @@ function SideBar(){
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider my-0"/>
 
-                {/*<!-- Nav Item - Dashboard -->*/}
-                <li className="nav-item active">
-                    <Link className="nav-link" to="/">
-                        <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - I Mentor</span></Link>
-                </li>
 
                 {/*<!-- Divider -->*/}
                 <hr className="sidebar-divider"/>
@@ -39,7 +33,7 @@ function SideBar(){
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="/users">
-                        <i className="fas fa-fw fa-folder"></i>
+                        <i className="fas fa-user"></i>
                         <span>Usuarios</span>
                     </Link>
                 </li>
