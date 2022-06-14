@@ -4,19 +4,18 @@ import Categories  from './Categories';
 
 function CategoriesInDb (){
 
-    const [categories, setCategories ] = useState()
+    const [categories, setCategories ] = useState([])
     useEffect( ()=> {
         fetch('http://localhost:3001/api/categories')
         .then(respuesta =>{
             return respuesta.json()
         })
         .then(categories =>{
+        console.log(categories.categories.map)
         setCategories(categories.categories)
         })
         .catch(error => console.log(error))
     }, [])
-
-    console.log(categories)
     
     let categorias = [ {
         name: 'front'}, {
@@ -39,9 +38,9 @@ function CategoriesInDb (){
                             <div className="card-body" id="caja1">
                             <div className="row">
                                 {
-                                    categorias.map((category,i)=> { 
+                                    categories.map((category,i)=> 
                                     <div><p key={category.name + i}>{category.name + i}</p></div>
-                                    }
+                                    
                                 )} 
                                 </div>
                             </div>
