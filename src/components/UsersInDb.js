@@ -42,8 +42,8 @@ class UsersInDb extends Component{
 									<table className="table" id="dataTable" cellSpacing="0">
 										<thead>
 											<tr>
-												<th>Id</th>
-												<th>Nombre</th>
+												<th>ID</th>
+												<th>Usuario</th>
 												<th>Email</th>
 											</tr>
 										</thead>

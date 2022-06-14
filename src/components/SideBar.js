@@ -6,11 +6,11 @@ function SideBar(){
     return(
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
-            <ul className="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul className="navbar-nav sidebar sidebar-dark">
 
                 {/*<!-- Sidebar - Brand -->*/}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
-                    <div className="sidebar-brand-icon">
+                    <div>
                         <img className="w-100" src={image} alt="I Mentor"/>
                     </div>
                 </a>
@@ -26,7 +26,7 @@ function SideBar(){
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="/">
                         <i className="fas fa-fw fa-home"></i>
-                        <span>Inicio</span>
+                        <span>Dashboard</span>
                     </Link>
                 </li>
 

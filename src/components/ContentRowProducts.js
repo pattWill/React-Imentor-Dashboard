@@ -48,7 +48,7 @@ function ContentRowTop(){
         color:   "success",
         titulo: "Total Productos",
         valor: products,
-        icono: "fas fa-plus-circle",
+        icono: "fas fa-fw fa-chart-area",
     }
     
     let user = {

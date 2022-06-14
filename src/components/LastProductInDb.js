@@ -19,11 +19,12 @@ function LastProductInDb(){
     console.log(lastProduct)
     return (
         <>	
-            <div className="card shadow mb-4">
+            <div className="card shadow w-50">
                             <div className="card-header py-2 bg-primary">
+
                                 <h6 className="m-0 font-weight-bold">Último producto agregado</h6>
                             </div>
-                            <div className="card-body">
+                            <div className="card-body ">
                                 <h3>{lastProduct.name}</h3> {' '}
                                 <p>{lastProduct.description} </p>
                             </div>
